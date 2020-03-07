@@ -35,6 +35,7 @@ echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode
 Try a combination of that, and setting your keyboard to Windows mode and pressing the `(fn) + x + l` key combination.
 
 How to persist these settings varies per system.
+For example, on Arch Linux you may follow this guide: https://wiki.archlinux.org/index.php/Apple_Keyboard#Function_keys_do_not_work
 
 ## Other Resources
 
