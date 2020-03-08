@@ -33,13 +33,39 @@ echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode
 ```
 
 Try a combination of that, and setting your keyboard to Windows mode and pressing the `(fn) + x + l` key combination.
-
 How to persist these settings varies per system.
-For example, on Arch Linux you may follow this guide: https://wiki.archlinux.org/index.php/Apple_Keyboard#Function_keys_do_not_work
+
+### Arch Linux
+
+```bash
+echo "options hid_apple fnmode=2" | sudo tee /etc/modprobe.d/hid_apple.conf
+```
+
+And then regenerate the ramdisk.
+
+```
+sudo mkinitcpio -P
+```
+
+
+### Debian based systems
+
+Create the same file
+
+```bash
+echo "options hid_apple fnmode=2" | sudo tee /etc/modprobe.d/hid_apple.conf
+```
+
+And then regenerate the ramdisk.
+
+```
+sudo update-initramfs -u
+```
 
 ## Other Resources
 
 * https://github.com/Kurgol/keychron/blob/master/k2.md
+* https://wiki.archlinux.org/index.php/Apple_Keyboard#Function_keys_do_not_work
 * https://gitlab.com/keychron/k2/-/tree/master/Issues
 * https://www.reddit.com/r/MechanicalKeyboards/comments/d5io49/keychron_k2_f_keys_dont_work_w_linux_help/
 * https://gist.github.com/mid9commander/669273
