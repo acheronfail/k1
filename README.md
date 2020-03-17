@@ -15,6 +15,7 @@ The square brackets indicate how long the entire key combination should be press
 | (fn) + 1                          | switch to bluetooth pairing 1              | *                         |
 | (fn) + 2                          | switch to bluetooth pairing 2              | *                         |
 | (fn) + 3                          | switch to bluetooth pairing 3              | *                         |
+| (fn) + z + j [5 seconds]          | factory reset                              | *                         |
 | (fn) + s + o [3 seconds]          | toggle auto sleep mode                     | *                         |
 | (fn) + x + l [3 seconds]          | (WINDOWS MODE) swap multimedia and fn keys | *                         |
 | (fn) + k + c [3 seconds]          | (MAC MODE) swap F5 and F6 to multimedia    | 2.6+                      |
